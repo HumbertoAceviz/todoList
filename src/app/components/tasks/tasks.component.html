@@ -26,23 +26,7 @@
           <div class="note-plus" [routerLink]="['/tasks/update/']">+</div>
         </div>
       </div>
-     <!-- <div class="col-md-6">
-      <div *ngIf="tasks && tasks.length > 0">
-        <ul class="list-group agenda-list">
-          <li class="list-group-item agenda-item" *ngFor="let task of tasks; let i = index">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="task.done" (ngModelChange)="updateStatusTask(task)"  >
-              <label class="form-check-label agenda-task-label">
-                {{i + 1}}.- {{ task.description }}
-                <span class="badge badge-info text-dark agenda-task-date">{{ task.fecha | date:'yyyy-MM-dd' }}</span>
-              </label>
-            </div>
-            <button class="btn btn-danger float-end" (click)="deleteTask(task.id)">Eliminar</button>
-          </li>
-        </ul>
-      </div>
 
-    </div>-->
     <div *ngIf="!tasks || tasks.length === 0" class="no-tasks">No hay tareas</div>
       <button routerLink="pendient" class="btn btn-primary agenda-button">Tareas Pendientes</button>
   </div>
