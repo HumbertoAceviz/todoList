@@ -59,10 +59,10 @@ export class TasksComponent implements OnInit {
     console.log(task);
   }
 
-  // hasTaskExpired(task: taskmodel): boolean {
-  //   const currentDate = new Date();
-  //   const taskDate = new Date(task.fecha);
+  hasTaskExpired(task: taskmodel): boolean {
+    const currentDate = new Date();
+    const taskDate = new Date(task.fecha);
 
-  //   return currentDate > taskDate;
-  // }
+    return currentDate > taskDate;
+  }
 }

@@ -12,10 +12,15 @@
           </div>
           <p style="margin: .5rem;">    {{ task.description }}</p>
           <div class="checkboxCard">
-            <label class="form-check-label agenda-task-label">
-              <div>Finaliza el:</div>
+            <ng-container *ngIf="hasTaskExpired(task); else notFinishedMessage">
+              <div>Tarea finalizada el:</div>
               <span class="badge badge-info text-dark agenda-task-date">{{ task.fecha | date:'yyyy-MM-dd' }}</span>
-            </label>
+            </ng-container>
+            <ng-template #notFinishedMessage>
+              <div>Tarea finaliza el:</div>
+              <span class="badge badge-info text-dark agenda-task-date">{{ task.fecha | date:'yyyy-MM-dd' }}</span>
+            </ng-template>
+
           </div>
           <div class="checkboxCard">
             <div>Estatus finalizado:</div>
