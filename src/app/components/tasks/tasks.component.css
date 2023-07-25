@@ -1,0 +1,105 @@
+.agenda-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.agenda-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.agenda-item {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.agenda-task-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.agenda-task-date {
+  float: right;
+}
+
+.no-tasks {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.agenda-button {
+  margin-top: 20px;
+}
+
+.notes-container{
+  max-width: 720px;
+  width: 300px;
+  justify-items: center;
+  display: flex;
+}
+
+
+.note{
+  width: 300px;
+  margin: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid rgb(197, 197, 167);
+  padding: 0;
+  height: auto;
+  max-height: 300px;
+  .note-header{
+    background-color: #f8f9fada;
+    width: 100%;
+    height: 35px;
+    justify-content: end;
+    display: flex;
+    border-bottom: solid rgb(197, 197, 167) 0.1px;
+  }
+  .close-btn{
+    width: 35px;
+    height: 100%;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+
+  }
+  .checkboxCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.note-plus{
+  background-color: rgb(243 247 252);
+  border-radius: 6px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(163, 188, 255);
+  cursor: pointer;
+  color: rgb(208, 208, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noteContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mainCard{
+  display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

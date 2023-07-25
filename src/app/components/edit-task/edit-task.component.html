@@ -1,0 +1,21 @@
+
+
+<div class="mainCard">
+    <div class="col-md-6">
+      <h2 class="add-task-title">Agregar Tarea</h2>
+      <form class="add-task-form">
+        <div class="form-group">
+          <label class="form-label">Tarea</label>
+          <input type="text" class="form-control" [(ngModel)]="task.description"  name="description">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Fecha limite</label>
+          <input type="date" class="form-control" [(ngModel)]="task.fecha" name="fecha">
+        </div>
+        <div class="noteContainer">
+          <button (click)="aggTask()" style="width: fit-content; margin-bottom: 15px; margin-top: 15px;" class="btn btn-primary">Agregar</button>
+          <button routerLink="/tasks" style="width: fit-content;" class="btn btn-secondary">Back</button>
+        </div>
+      </form>
+    </div>
+</div>
